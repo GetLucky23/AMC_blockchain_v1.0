@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" class = "html">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AMChain</title>
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="body">
+  <div class="background">
+    <video autoplay muted loop id="background__video" class="background__video">
+      <source src="./vid/31176214-preview.mp4" type="video/mp4">
+    </video>
+
+    <button id="video-stop" class="button button__video-stop" onclick="backgroundVideoStop()">Pause</button>
+  </div>
+
+  <header class="header section">
+    <div class="wrapper">
+      <div class="header__content">
+        <h3 class="header header__h3">Welcome to:</h3>
+        <h1 class="header header__h1">AMChain</h1>
+        <h3 class="header header__h3">Artem Motalov JS blockchain</h3>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="console section">
+      <div class="wrapper"> 
+        <div class="console__content">
+          <h3 class="header__h3">Console</h3>
+          <div class="console__window">
+            <pre id="log"></pre>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section class="data_receiver section">
+    <div class="wrapper">
+      <div class="data_receiver__content">
+        <h3 class="data_receiver__header">Put your data:</h3>
+        <!-- some type of data receiver to get data inside blockchain -->
+        <form action="" class="data_receiver__form">
+          <textarea name="text" id="text" cols="25" rows="5" class="data_receiver__text"></textarea>
+          <input type="file" value="Browse" class = "button data_receiver__button">
+          <div class="data_receiver__buttons">
+            <input type="submit" value="Send to blockchain" class = "button data_receiver__button">
+            <input type="reset" value="Reset" class = "button data_receiver__button">
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  </main>
+  <script src="./main.js"></script>
+  <script src="./blockchain.js"></script>
+</body>
+</html>
